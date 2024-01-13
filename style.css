@@ -8,7 +8,7 @@
     --primary-color: #D7D4FF;
     --button-color: #6c63ff;
     --sombra: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    --primary-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    --primary-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     --secondary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -36,7 +36,7 @@ header {
 }
 
 .titulo h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--primary-font);
     font-size: 36px;
     font-weight: 400;
     line-height: 47px;
@@ -46,7 +46,7 @@ header {
 
 .titulo p {
     margin-top: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--primary-font);
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -118,6 +118,7 @@ main>section {
 }
 
 .texto_card {
+    font-family: var(--primary-font);
     height: 180px;
     padding: 15px;
     background-color: #fff;
@@ -127,9 +128,10 @@ main>section {
 }
 
 footer {
-    height: 750px;
+    height: 350px;
     background: var(--primary-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -152,6 +154,7 @@ form {
 
 form>h1 {
     font-family: var(--primary-font);
+    margin-top: 15px;
     font-size: 30px;
 }
 
@@ -182,4 +185,9 @@ form>h1 {
     border: none;
     border-radius: 4px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer>p {
+    margin-top: 40px;
+    font-family: var(--secondary-font);
 }
