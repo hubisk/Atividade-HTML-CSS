@@ -3,58 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Atividade HTML / CSS</title>
 </head>
 <body>
     <header>
-        <section>
-            <div>
+        <section class="cabecalho">
+            <div class="titulo">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue consectetur ullamcorper non ac massa.</p>
-                <button>Leia mais</button>
+                <button class="btn_leia">Leia mais</button>
             </div>
-            <div></div>
+            <div class="svg">
+                <img src=".\images\caixas.svg" alt="">
+            </div>
         </section>
     </header>
     <main>
         <section>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <h1>Título do card</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
-                </div>
+            <div class="miolo_cards" id="miolo_color-red">
+                                    
+                    <div class="texto_card">
+                        <h1>Título do card</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>                
             </div>
-            <div>
-                <img src="" alt="">
-                <div></div>
+            <div class="miolo_cards" id="miolo_color-azul-Claro">
+                                    
+                    <div class="texto_card">
+                        <h1>Título do card</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>                
             </div>
-            <div>
-                <img src="" alt="">
-                <div></div>
+            <div class="miolo_cards" id="miolo_color-violeta">
+                                    
+                    <div class="texto_card">
+                        <h1>Título do card</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>                
             </div>
-            <div>
-                <img src="" alt="">
-                <div></div>
+        </section>
+
+            <section>
+            <div class="miolo_cards" id="miolo_color-verde">
+                                    
+                    <div class="texto_card">
+                        <h1>Título do card</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>                
             </div>
-            <div>
-                <img src="" alt="">
-                <div></div>
+            <div class="miolo_cards" id="miolo_color-amarelo">
+                                    
+                    <div class="texto_card">
+                        <h1>Título do card</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>                
             </div>
-            <div>
-                <img src="" alt="">
-                <div></div>
+            <div class="miolo_cards" id="miolo_color-azul">
+                                    
+                    <div class="texto_card">
+                        <h1>Título do card</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.</p>
+                    </div>                
             </div>
         </section>
     </main>
     <footer>
-        <form action="">
-            <h1>Entre em contato</h1>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome">
-            <input type="textarea">
-            <button>Enviar Mensagem</button>
-        </form>
+        <section>
+            <form class="formulario" method="post">
+                <h1>Entre em contato</h1>
+                <div>
+                    <input class="input_form" type="text" id="nome" name="" placeholder="Nome">
+                </div>
+                <div>
+                    <input class="input_form" type="text" id="email" name="" placeholder="Email">
+                </div>
+                <div>
+                    <input class="input_form" type="text" id="telefone" name="" placeholder="Telefone">
+                </div>
+                <div>
+                    <textarea class="input_form mensagem" name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                </div>
+                <button class="btn_enviar">Enviar Mensagem</button>
+            </form>
+        </section>
     </footer>
     <footer></footer>
 </body>
